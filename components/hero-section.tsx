@@ -119,16 +119,6 @@ export function HeroSection() {
               </Link>
             </Button>
 
-            <Button
-              size="lg"
-              variant="outline"
-              className="group bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white hover:bg-white hover:text-[#003d2e] text-lg px-8 py-7 rounded-full transition-all duration-300 hover:scale-105 font-semibold"
-              asChild
-            >
-              <Link href="/donate" className="flex items-center gap-3">
-                <span>{t("nav.donate")}</span>
-              </Link>
-            </Button>
           </div>
 
           {/* Quick Stats */}

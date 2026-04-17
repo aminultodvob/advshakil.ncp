@@ -36,7 +36,6 @@ export function Header() {
     { key: "home", href: "/#home" },
     { key: "opinion", href: "/#opinion" },
     { key: "priorities", href: "/#priorities" },
-    { key: "donate", href: "/donate" },
   ]
 
   return (
@@ -57,20 +56,6 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             {navItems.map((item) => {
-              // Special styling for donate button
-              if (item.key === "donate") {
-                return (
-                  <Link
-                    key={item.key}
-                    href={item.href}
-                    className="px-5 py-2.5 bg-gradient-to-r from-red-500 to-pink-500 text-white rounded-full font-semibold hover:from-red-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 animate-pulse"
-                  >
-                    <span className="flex items-center gap-2">
-                      {t(item.key)}
-                    </span>
-                  </Link>
-                )
-              }
 
               // Regular nav items
               return (
